@@ -14,10 +14,3 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
-// RailsAjax
-
-//= require jquery.history
-
-//= require jquery.rails-ajax
-
-//= require RailsAjax-Config

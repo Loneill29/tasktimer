@@ -35,7 +35,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'faker'
-gem 'rails-ajax', '~> 1.0', '>= 1.0.0.20140320'
 gem 'jquery-rails'
 
 group :development, :test do

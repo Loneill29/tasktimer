@@ -1,10 +1,6 @@
 class ItemsController < ApplicationController
   respond_to :html, :js
 
-  def index
-    @items = Item.all
-  end
-
   def new
     @item = Item.new
   end
@@ -26,21 +22,19 @@ class ItemsController < ApplicationController
   def destroy
     @user = User.find(params[:user_id])
     @item = @user.items.find(params[:id])
+    @items = @user.items.all
 
-    if @item.destroy
-      flash[:notice] = "Item completed!"
-    else
-      flash[:error] = "There was an error removing the item. Please try again."
-    end
+    @item.destroy
+
     respond_to do |format|
-        format.html
-        format.js
-      end
+    format.html { redirect_to root_path }
+    format.js { }
     end
+  end
 
   private
 
   def item_params
-    params.require(:item).permit(:name, :user)
+    params.require(:item).permit(:name)
   end
 end
