@@ -3,8 +3,9 @@
     <div class="col-md-8">
         <% @items.each do |item| %>
           <ul>
-            <li>
+            <li id="items">
               <%="#{item.name}"%>
+              <%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
             </li>
           </ul>
         <% end %>
