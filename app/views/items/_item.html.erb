@@ -8,6 +8,9 @@
               <%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
             </li>
           </ul>
+          <div>
+            <%= distance_of_time_in_words(Time.now, item.created_at.to_date + 7 ) %> left to complete!
+          </div>
         <% end %>
     </div>
 </div>
