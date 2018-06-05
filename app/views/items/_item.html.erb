@@ -9,7 +9,7 @@
             </li>
           </ul>
           <div>
-            <%= distance_of_time_in_words(Time.now, item.created_at.to_date + 7 ) %> left to complete!
+            <%= distance_of_time_in_words(Time.now, item.created_at + 7.days ) %> left to complete!
           </div>
         <% end %>
     </div>
