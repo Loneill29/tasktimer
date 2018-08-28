@@ -1,16 +1,14 @@
-<div class="row" id="items"%>
-  <h4>My To-Do Items</h4>
-    <div class="col-md-8">
+<div class="container" id="to-do-list">
+<div class="row" id="items">
+    <div>
         <% @items.each do |item| %>
-          <ul>
-            <li>
-              <%="#{item.name}"%>
+          <ul id="item-list">
+            <li class ="item-name">
               <%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
+              <%="#{item.name}"%>
+              <span class="time-left"><%= distance_of_time_in_words(Time.now, item.created_at + 7.days ) %> left to complete!</span>
             </li>
           </ul>
-          <div>
-            <%= distance_of_time_in_words(Time.now, item.created_at + 7.days ) %> left to complete!
-          </div>
         <% end %>
     </div>
 </div>

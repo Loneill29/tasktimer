@@ -1,3 +1,46 @@
 // Place all the styles related to the Items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#items {
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Archivo', sans-serif;
+}
+.item-name {
+  font-size: 30px;
+  font-weight: medium;
+  display: inline;
+  color: #EDF5E1;
+
+}
+#item-list {
+  list-style: inside;
+}
+#new-item-form {
+  padding-top: 20px;
+  width:40%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+#to-do-list {
+  width:100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.time-left {
+  display: inline;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #05386B;
+}
+.glyphicon {
+  padding-right: 10px;
+  color: #05386B;
+}
