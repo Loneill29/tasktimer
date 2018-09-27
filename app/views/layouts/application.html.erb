@@ -4,9 +4,10 @@
     <title>TaskTimer</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag "/assets/stylesheets/users" %>
     <%= stylesheet_link_tag "/assets/stylesheets/items" %>
-    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
@@ -21,8 +22,7 @@
     </div>
     <div class="container">
       <ul class="nav nav-tabs">
-        <li><%= link_to "Home", welcome_index_path %></li>
-        <li><%= link_to "My To-Do List", user_session_path, :onclick => "blocmetrics.report('my to-do list link clicked')" %></li>
+        <li><%= link_to "My Tasks", user_session_path, :onclick => "blocmetrics.report('my to-do list link clicked')" %></li>
       </ul>
       <p class="notice"><%= notice%></p>
       <p class="alert"><%= alert %><p/>
