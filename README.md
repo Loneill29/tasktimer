@@ -1,4 +1,4 @@
 
-## Blocitoff
+# TaskTimer
 
-Blocitoff is a self destructing task tracking application.
+A self destructing task tracking application.
