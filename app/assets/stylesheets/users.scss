@@ -3,9 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #list-title {
   padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-  background-color: #05386B;
-  color: #5CDB95;
-  font-family: 'Archivo', sans-serif;
+  float: right;
+  padding-right: 300px;
+  margin-top: 20px;
+  color: #f1f13e;
+  display: block;
+  padding-bottom: 20px;
+}
+
+#list {
+  display: inline;
+  margin-top: 100px;
+  margin-left: 380px;
+}
+
+.form-group {
+  display: inline;
 }

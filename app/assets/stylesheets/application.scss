@@ -24,6 +24,7 @@
 body {
   background: url('clock.jpg');
   background-size: cover;
+  background-color: black;
   z-index: -1;
   font-family: 'Raleway', sans-serif;
 }
@@ -35,9 +36,25 @@ body {
   margin-top: 10px;
 }
 
+.btn {
+  margin-top: 10px;
+  background-color: #f1f13e;
+  border: 0px;
+  font-weight: bold;
+  color: black;
+}
+
 .nav {
   border: 0px;
-  padding-left: 120px;
+  padding-left: 180px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  border: none!important;
+  background: none!important;
+  color: #f1f13e!important;
 }
 
 .home {
@@ -60,6 +77,25 @@ a {
   color: #f1f13e;
 }
 
+a.navbar-link {
+  color: #f1f13e;
+  float: right;
+  padding-right: 30px;
+}
+
 #current-user a {
   color: #f1f13e;
+}
+
+.devise {
+  margin-left: 500px;
+  margin-top: 20px;
+}
+
+.devise h2 {
+  color: #f1f13e;
+}
+
+.devise-title {
+  color: #ffff;
 }
