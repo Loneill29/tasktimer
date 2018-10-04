@@ -15,3 +15,87 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body {
+  background: url('clock.jpg');
+  background-size: cover;
+  background-color: black;
+  z-index: -1;
+  font-family: 'Raleway', sans-serif;
+}
+
+#current-user {
+  float:right;
+  padding-right: 30px;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: #f1f13e;
+  border: 0px;
+  font-weight: bold;
+  color: black;
+}
+
+.nav {
+  border: 0px;
+  padding-left: 180px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  border: none!important;
+  background: none!important;
+  color: #f1f13e!important;
+}
+
+.home {
+  float: right;
+  padding-right: 150px;
+  margin-top: 180px;
+  color: #f1f13e;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+a {
+  color: #f1f13e;
+}
+
+a.navbar-link {
+  color: #f1f13e;
+  float: right;
+  padding-right: 30px;
+}
+
+#current-user a {
+  color: #f1f13e;
+}
+
+.devise {
+  margin-left: 500px;
+  margin-top: 20px;
+}
+
+.devise h2 {
+  color: #f1f13e;
+}
+
+.devise-title {
+  color: #ffff;
+}
