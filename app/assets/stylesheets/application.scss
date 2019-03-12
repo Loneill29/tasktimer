@@ -30,6 +30,7 @@ body {
 #current-user {
   padding-right: 30px;
   margin-bottom: 20px!important;
+  margin-left: 10px;
 }
 
 .btn {
@@ -55,9 +56,24 @@ body {
 .nav a:hover {
   background-color: #036b1f!important;
 }
+
+.nav li a {
+  padding: 20px 15px!important;
+}
+
 a.navbar-link {
   float: right;
   padding-right: 30px;
+  color: #ffff!important;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.logged-in {
+  margin-top: 40px;
+}
+.sign-up {
+  padding-right: 30px!important;
 }
 
 #item-list {
